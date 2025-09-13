@@ -425,6 +425,10 @@ def dividendInsertionForZero(stockID, firstDate, lastDate):
                                                     VALUES (?, ?, ?);''',
                   (stockID, date,0))
     conn.commit()
+    
+'''
+These functions are used to input the data into the stock database
+'''
 
 '''
 The data must be processed to ensure there are values in all categories every day. This is to ensure
@@ -448,3 +452,4 @@ nvidiaDividendFile.close()
 appleDividendFile.close()
 microsoftDividendFile.close()
 intelDividendFile.close()
+
